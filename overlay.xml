@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE repositories SYSTEM "http://www.gentoo.org/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>gentoogle</name>
+    <description lang="en">robink's very-unofficial Google Compute Engine ebuilds (largely sniped from other overlays).</description>
+    <owner type="person">
+      <email>robink@creosotehill.org</email>
+      <name>Robin Kauffman</name>
+    </owner>
+    <source type="git">https://github.com/Haifen/gentoogle</source>
+    <feed>https://github.com/Haifen/gentoogle/commits/master.atom</feed>
+  </repo>
+</repositories>
+
