@@ -7,4 +7,4 @@ KEYWORDS=~amd64 ~x86
 RDEPEND=mail-filter/spamassassin
 SLOT=0
 SRC_URI=https://api.github.com/repos/truxoft/sa-heatu/tarball/170f1e503f36b7d81db5f65febd615d03e900089 -> sa-heatu-4.02.tar.gz
-_md5_=194a7d43576d9390d903725e69d2af73
+_md5_=b0eaff31dfa8d34dfbd8afccc5fe36cc
