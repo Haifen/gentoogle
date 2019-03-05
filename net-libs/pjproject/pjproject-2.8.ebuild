@@ -17,10 +17,6 @@ VIDEO_FLAGS="sdl ffmpeg v4l2 openh264 libyuv"
 SOUND_FLAGS="alsa oss portaudio"
 IUSE="amr debug doc epoll examples ipv6 libressl opus resample silk ssl static-libs webrtc ${CODEC_FLAGS} ${VIDEO_FLAGS} ${SOUND_FLAGS}"
 
-PATCHES=(
-	"${FILESDIR}"/${P}-ssl-flipflop.patch
-)
-
 RDEPEND="alsa? ( media-libs/alsa-lib )
 	oss? ( media-libs/portaudio[oss] )
 	portaudio? ( media-libs/portaudio )
