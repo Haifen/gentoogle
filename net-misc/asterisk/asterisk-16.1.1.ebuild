@@ -28,7 +28,7 @@ REQUIRED_USE="gtalk? ( xmpp )
 "
 
 EPATCH_SUFFIX="patch"
-PATCHES=( "${WORKDIR}/asterisk-patchset-${PV}" )
+PATCHES=( "${WORKDIR}/asterisk-patchset-14.6.1" )
 
 CDEPEND="dev-db/sqlite:3
 	dev-libs/popt
