@@ -122,6 +122,7 @@ src_configure() {
 		$(use_with newt) \
 		$(use_with portaudio) \
 		$(use_with pjproject "pjproject" "${EROOT}usr")
+		$(use_with pjproject "without-pjproject-bundled")
 
 	# Blank out sounds/sounds.xml file to prevent
 	# asterisk from installing sounds files (we pull them in via
