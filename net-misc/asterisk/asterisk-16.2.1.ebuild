@@ -121,7 +121,7 @@ src_configure() {
 		$(use_with http gmime) \
 		$(use_with newt) \
 		$(use_with portaudio) \
-		$(use_with pjproject "pjproject" "${EROOT}usr")
+		$(use_with pjproject "pjproject" "${EROOT}usr") \
 		$(use_with pjproject "without-pjproject-bundled")
 
 	# Blank out sounds/sounds.xml file to prevent
