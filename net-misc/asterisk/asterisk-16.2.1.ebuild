@@ -121,7 +121,7 @@ src_configure() {
 		$(use_with http gmime) \
 		$(use_with newt) \
 		$(use_with portaudio) \
-		$(use_with pjproject)
+		$(use_with pjproject "pjproject" "${EROOT}usr")
 
 	# Blank out sounds/sounds.xml file to prevent
 	# asterisk from installing sounds files (we pull them in via
@@ -314,12 +314,12 @@ pkg_config() {
 		einfo "Resetting permissions to defaults..."
 
 		for x in spool run lib log; do
-			chown -R asterisk:asterisk "${ROOT}"var/${x}/asterisk
+			chown -R asterisk:asterisk "${EROOT}"var/${x}/asterisk
 			chmod -R u=rwX,g=rwX,o=    "${ROOT}"var/${x}/asterisk
 		done
 
-		chown -R root:asterisk  "${ROOT}"etc/asterisk
-		chmod -R u=rwX,g=rwX,o= "${ROOT}"etc/asterisk
+		chown -R root:asterisk  "${EROOT}"etc/asterisk
+		chmod -R u=rwX,g=rwX,o= "${EROOT}"etc/asterisk
 
 		einfo "done"
 	else
