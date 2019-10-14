@@ -74,7 +74,7 @@ src_configure() {
 		$(use_enable silk) \
 		$(use_enable opus) \
 		$(use-enable ssl) \
-		$(use_enable webrtc libwebrtc) \
+		$(usex webrtc "" --disable-libwebrtc) \
 		$(use_enable libyuv) \
 		"${myconf[@]}"
 }
