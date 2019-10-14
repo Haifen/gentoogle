@@ -121,7 +121,8 @@ src_configure() {
 		$(use_with http gmime) \
 		$(use_with newt) \
 		$(use_with portaudio) \
-		$(use_with pjproject)
+		$(use_with pjproject) \
+		--without-pjproject-bundled # Never use the bundled pjproject.
 
 	# Blank out sounds/sounds.xml file to prevent
 	# asterisk from installing sounds files (we pull them in via
