@@ -260,7 +260,7 @@ src_install() {
 
 	# install the upgrade documentation
 	#
-	dodoc README UPGRADE* BUGS CREDITS
+	dodoc README.md UPGRADE.txt BUGS CREDITS
 
 	# install extra documentation
 	#
